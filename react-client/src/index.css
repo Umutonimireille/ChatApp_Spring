@@ -69,7 +69,7 @@ button{
 }
 
 .input-message{
-  width:90%;
+  width:60%;
   border-radius: 50px;
 }
 
@@ -103,7 +103,7 @@ ul {
 .avatar{
   background-color: cornflowerblue;
   padding: 3px 5px;
-  border-radius: 5px;
+  border-radius: 35px;
   color:#fff;
 }
 .avatar.self{
@@ -123,4 +123,7 @@ ul {
 }
 .message.self{
   justify-content: end;
+}
+.video {
+  padding: 20px;
 }

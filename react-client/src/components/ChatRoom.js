@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import {over} from 'stompjs';
 import SockJS from 'sockjs-client';
+// import { FaVideo } from 'react-icons/fa';
+import  {FaVideo} from  'react-icons/fa'
+import VideoCall from "./VideoCall";
 
 var stompClient =null;
 const ChatRoom = () => {
@@ -127,6 +130,10 @@ const ChatRoom = () => {
                         <li onClick={()=>{setTab(name)}} className={`member ${tab===name && "active"}`} key={index}>{name}</li>
                     ))}
                 </ul>
+                <div className= "video" onClick={VideoCall} >
+                    <i><FaVideo /></i>
+                </div>
+
             </div>
             {tab==="CHATROOM" && <div className="chat-content">
                 <ul className="chat-messages">
